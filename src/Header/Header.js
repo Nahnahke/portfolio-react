@@ -57,18 +57,36 @@ const ProfileContainer = styled.div`
   @media (min-width: 1025px) {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 `;
 
 const ProfileWrapper = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   flex-direction: column;
 
   @media (min-width: 768px) {
+    align-items: flex-start;
+    justify-content: flex-start;
     flex-direction: row;
     margin: 2rem 0 0 0;
+
+    .profile-pic {
+      margin-right: 1.875rem;
+    }
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  @media (min-width: 1025px) {
+    margin-left: var(--side-margins-desktop);
   }
 `;
 
@@ -90,17 +108,17 @@ const ProfilePic = styled.img`
   }
 `;
 
-const ProfileContent = styled.div`
-  margin: 17rem 1.85rem 2rem 1.85rem;
+const ProfileContentWrapper = styled.div`
+margin: 18rem 0 2rem 0;
 
-  @media (min-width: 768px) {
-    margin: 0;
-    margin-top: 2rem;
-  }
+@media (min-width: 768px) {
+  margin: 0;
+  margin-top: 2rem;
+}
 
-  @media (min-width: 1024px) {
-    margin-right: 4.6875rem;
-  }
+@media (min-width: 1024px) {
+  margin-right: 4.6875rem;
+}
 `;
 
 const Name = styled.h1`
@@ -125,13 +143,29 @@ const IntroText = styled.p``;
 const ContactContainer = styled.div`
   display: flex;
   justify-content: center;
-  margin-left: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    justify-content: center; 
+    margin-left: 0; 
+  }
+
+  a:not(:last-child) {
+    margin-right: 30px;
+  }
 `;
 
 const Icon = styled.a`
   font-size: 35px;
   color: #333;
   margin-right: 30px;
+
+  &:hover {
+    color: #999;
+  }
 `;
 
 const Header = () => {
@@ -143,10 +177,10 @@ const Header = () => {
       <ProfileContainer>
         <ProfileWrapper>
           <ProfilePic src="/images/profile-picture.jpg" alt="profile of Hannah Ek" />
-          <ProfileContent>
+          <ProfileContentWrapper>
             <Name>Hannah Ek</Name>
             <Title>Fullstack Developer</Title>
-          </ProfileContent>
+          </ProfileContentWrapper>
         </ProfileWrapper>
         <Introduction lang="en-US">
           <IntroText>
@@ -161,33 +195,33 @@ const Header = () => {
             to quality, Hannah is a valuable asset to any team she
             works with.
           </IntroText>
+          <ContactContainer>
+            <Icon
+              hrefLang="en-US"
+              title="link to Hannah Ek's LinkedIn page"
+              href="https://www.linkedin.com/in/hannah-ek-91667434/"
+              target="_blank"
+              rel="noreferrer">
+              <FontAwesomeIcon icon={['fab', 'linkedin-in']} />
+            </Icon>
+            <Icon
+              hrefLang="en-US"
+              title="link to Hannah Ek's Github page"
+              href="https://github.com/Nahnahke"
+              target="_blank"
+              rel="noreferrer">
+              <FontAwesomeIcon icon={['fab', 'github']} />
+            </Icon>
+            <Icon
+              hrefLang="en-US"
+              title="link to Hannah Ek's Stack Overflow page"
+              href="https://stackoverflowteams.com/c/technigo/users/457/?tab=profile"
+              target="_blank"
+              rel="noreferrer">
+              <FontAwesomeIcon icon={['fab', 'stack-overflow']} />
+            </Icon>
+          </ContactContainer>
         </Introduction>
-        <ContactContainer>
-          <Icon
-            hrefLang="en-US"
-            title="link to Hannah Ek's LinkedIn page"
-            href="https://www.linkedin.com/in/hannah-ek-91667434/"
-            target="_blank"
-            rel="noreferrer">
-            <FontAwesomeIcon icon={['fab', 'linkedin-in']} />
-          </Icon>
-          <Icon
-            hrefLang="en-US"
-            title="link to Hannah Ek's Github page"
-            href="https://github.com/Nahnahke"
-            target="_blank"
-            rel="noreferrer">
-            <FontAwesomeIcon icon={['fab', 'github']} />
-          </Icon>
-          <Icon
-            hrefLang="en-US"
-            title="link to Hannah Ek's Stack Overflow page"
-            href="https://stackoverflowteams.com/c/technigo/users/457/?tab=profile"
-            target="_blank"
-            rel="noreferrer">
-            <FontAwesomeIcon icon={['fab', 'stack-overflow']} />
-          </Icon>
-        </ContactContainer>
       </ProfileContainer>
     </HeaderWrapper>
   );
