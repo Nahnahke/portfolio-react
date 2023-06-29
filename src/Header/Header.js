@@ -19,33 +19,44 @@ const HeaderWrapper = styled.header`
     grid-template-columns: 1fr 1fr;
     height: 100vh;
   }
+
+  @media (max-width: 767px) {
+    height: auto;
+  }
 `;
 
 const HeroImage = styled.div`
   display: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: 768px) and (max-width: 1024px) {
     display: block;
     width: 100%;
-    height: 70vh;
+    height: 50vh;
     overflow: hidden;
     position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+    background-size: cover;
+    background-position: 75%;
+    margin-top: 0;
   }
 
   @media (min-width: 1025px) {
+    display: block;
     grid-column: 2 / 3;
     grid-row: 1 / -1;
-    width: 100%;
+    width: 50vw;
     height: 100%;
     background-size: cover;
     background-position: 75%;
     margin-top: 0;
+    overflow: hidden;
   }
 `;
 
 const CoverImage = styled.img`
   height: 100%;
-  background-size: cover;
+  width: 100%;
+  object-fit: cover;
 `;
 
 const ProfileContainer = styled.div`
@@ -67,12 +78,13 @@ const ProfileWrapper = styled.div`
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
+  margin-top: 15rem;
 
   @media (min-width: 768px) {
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: row;
-    margin: 2rem 0 0 0;
+    margin: var(--side-margins-tablet) 0 0 0;
 
     .profile-pic {
       margin-right: 1.875rem;
@@ -109,16 +121,16 @@ const ProfilePic = styled.img`
 `;
 
 const ProfileContentWrapper = styled.div`
-margin: 18rem 0 2rem 0;
+  margin: var(--side-margins-mobile) 0 0 0;
 
-@media (min-width: 768px) {
-  margin: 0;
-  margin-top: 2rem;
-}
+  @media (min-width: 768px) {
+    margin: 0;
+    margin-top: 2rem;
+  }
 
-@media (min-width: 1024px) {
-  margin-right: 4.6875rem;
-}
+  @media (min-width: 1024px) {
+    margin-right: var(--side-margins-desktop);
+  }
 `;
 
 const Name = styled.h1`
@@ -145,12 +157,11 @@ const ContactContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 2rem;
   text-align: center;
 
   @media (min-width: 768px) {
-    justify-content: center; 
-    margin-left: 0; 
+    justify-content: center;
+    margin-left: 0;
   }
 
   a:not(:last-child) {
