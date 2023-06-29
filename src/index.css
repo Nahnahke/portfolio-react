@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+:root {
+  --side-margins-mobile: 30px;
+  --side-margins-tablet: 50px;
+  --side-margins-desktop: 50px;
+}
