@@ -75,18 +75,19 @@ const ProfileText = styled.div`
 `;
 
 const FooterHeading2 = styled.h2`
-  margin: 10px 0 0 0;
+font-family:  'SatoshiVariable';
+margin: 0 0 0 20px;
+color: #137B8A;
 `;
 
 const FooterHeading3 = styled.h3`
-  margin: 0;
+font-family:  'SatoshiVariable';
+margin: 0 0 0 20px;
 `;
 
 const FooterHeading4 = styled.h4`
-  font-size: 24px;
-  line-height: 33px;
-  color: #565656;
-  margin: 0;
+font-family:  'SatoshiVariable';
+margin: 0 0 0 20px;
 `;
 
 const PhoneNumber = styled.p`

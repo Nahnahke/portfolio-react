@@ -77,7 +77,7 @@ const ProfileWrapper = styled.div`
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  margin-top: 2rem;
+  margin-top: 5rem;
   align-items: center;
   text-align: center;
 
@@ -142,7 +142,7 @@ const Introduction = styled.div`
 `;
 
 const IntroText = styled.p`
-margin-top: 50px;
+margin-top: 30px;
 font-family: 'EB Garamond', serif;
 font-size: 22px;
 font-weight: 400;
