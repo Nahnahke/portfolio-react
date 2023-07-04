@@ -8,7 +8,8 @@ const SkillsContainer = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: calc(100vh - 60px);
+  min-height: 100vh;
+  padding-top: 60px;
 
   @media (min-width: 667px) and (max-width: 1024px) {
     grid-column: 1/2;
