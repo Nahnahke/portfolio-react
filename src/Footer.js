@@ -27,6 +27,7 @@ const FooterHeading = styled.h1`
   margin-bottom: 20px;
   margin-top: 40px;
   text-align: center;
+  margin: ${({ theme }) => theme['--side-margins-mobile']};
 
   @media (min-width: 768px) and (max-width: 1024px) {
     font-size: 90px;
