@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 const TechWrapper = styled.section`
-  padding: 20px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,20 +18,17 @@ const Title = styled.h3`
 `;
 
 const TechText = styled.p`
-  margin: var(--side-margins-mobile);
-  margin: 0;
+margin: var(--side-margins-mobile);
   font-family: 'EB Garamond', serif;
   font-size: 22px;
   font-weight: 400;
 
   @media (min-width: 768px) {
-    margin: 0 120px;
+    margin: var(--side-margins-tablet);
   }
 
   @media (min-width: 1025px) {
-    width: 100%;
-    max-width: 800px;
-    margin-right: 100px;
+    margin: var(--side-margins-desktop);
   }
 `;
 

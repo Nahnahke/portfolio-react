@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import styled from 'styled-components';
+import Profile from 'Profile';
 
 library.add(fab);
 
@@ -14,7 +15,7 @@ const HeaderWrapper = styled.section`
   justify-content: flex-start;
 
   @media (min-width: 768px) and (max-width: 1024px) {
- height: 100vh;
+  height: 100vh;
   }
 
   @media (min-width: 1025px) {
@@ -79,7 +80,6 @@ const ProfileWrapper = styled.div`
   flex-direction: column;
   margin-top: 5rem;
   align-items: center;
-  text-align: center;
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -96,39 +96,15 @@ const ProfilePic = styled.img`
   height: 150px;
   border-radius: 50%;
   border: 2px solid whitesmoke;
-  margin-bottom: 29px;
+  margin-bottom: 50px;
 
   @media (min-width: 768px) {
     margin: 0 1.875rem 0 0;
   }
-`;
 
-const ProfileContentWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  @media (min-width: 1025px) {
 
-  @media (min-width: 768px) {
-    margin-left: 0;
-    margin-bottom: 2.5rem;
   }
-`;
-
-const Name = styled.h1`
-font-size: 28px;
-font-weight: 700;
-line-height: 38px;
-color: #137B8A;
-font-family:  'SatoshiVariable';
-margin-bottom: -20px;
-`;
-
-const Title = styled.h2`
-font-size: 22px;
-font-weight: 900;
-line-height: 43px;
-margin-bottom: -30px;
-
 `;
 
 const Introduction = styled.div`
@@ -169,8 +145,7 @@ const ContactContainer = styled.div`
 
 const Icon = styled.a`
   font-size: 35px;
-  color: #333;
-  margin-right: 30px;
+  color: black;
 
   &:hover {
     color: #999;
@@ -186,10 +161,7 @@ const Header = () => {
       <ProfileContainer>
         <ProfileWrapper>
           <ProfilePic src="/images/profile-picture.jpg" alt="profile of Hannah Ek" />
-          <ProfileContentWrapper>
-            <Name>Hannah Ek</Name>
-            <Title>Fullstack Developer</Title>
-          </ProfileContentWrapper>
+          <Profile />
         </ProfileWrapper>
         <Introduction lang="en-US">
           <IntroText>

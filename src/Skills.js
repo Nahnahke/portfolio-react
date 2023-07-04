@@ -47,12 +47,11 @@ const SkillListContainer = styled.div`
   }
 
   @media (min-width: 1025px) {
-    display: flex;
     flex-direction: row;
     justify-content: center; 
     align-items: flex-start; 
     gap: 4rem;
-    margin: 3rem 0 0 0;
+    margin: var(--side-margins-desktop);
   }
 `
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import { styled } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Profile from 'Profile';
 
 const FooterSection = styled.section`
   background-color: white;
@@ -55,7 +56,7 @@ const ProfileImage = styled.img`
   border-radius: 50%;
   max-width: 150px;
   max-height: 150px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   margin-left: 30px;
 
   @media (min-width: 768px) and (max-width: 1024px) {
@@ -63,31 +64,9 @@ const ProfileImage = styled.img`
     max-width: 164px;
     max-height: 164px;
     margin-right: 29px;
+    margin-bottom: 20px;
     margin-left: 0;
   }
-`;
-
-const ProfileText = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin: auto 0 auto 10px;
-  margin-left: 30px;
-`;
-
-const FooterHeading2 = styled.h2`
-font-family:  'SatoshiVariable';
-margin: 0 0 0 20px;
-color: #137B8A;
-`;
-
-const FooterHeading3 = styled.h3`
-font-family:  'SatoshiVariable';
-margin: 0 0 0 20px;
-`;
-
-const FooterHeading4 = styled.h4`
-font-family:  'SatoshiVariable';
-margin: 0 0 0 20px;
 `;
 
 const PhoneNumber = styled.p`
@@ -95,6 +74,7 @@ margin: 0;
 font-family: 'EB Garamond', serif;
 font-size: 22px;
 font-weight: 400;
+margin-bottom: 10px;
 
   a {
     text-decoration: none;
@@ -147,13 +127,8 @@ const Footer = () => {
           src="/images/profile-picture.jpg"
           alt="Photo of Hannah"
           className="personal-photo" />
-        <ProfileText>
-          <FooterHeading2>Hannah Ek</FooterHeading2>
-          <FooterHeading3>Frontend developer</FooterHeading3>
-          <FooterHeading4>with a background in sales and e-commerce</FooterHeading4>
-        </ProfileText>
+        <Profile />
       </ProfileContainer>
-
       <PhoneNumber>
         <a href="tel:+46(0)706 711 804">+46 (0)706 711 804</a>
       </PhoneNumber>
