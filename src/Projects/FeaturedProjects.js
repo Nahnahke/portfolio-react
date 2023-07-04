@@ -70,6 +70,7 @@ object-position: 50%;
   height: 450px;
   object-fit: cover;
   object-position: 50%;
+  margin-bottom: 70px;
 }
 `;
 

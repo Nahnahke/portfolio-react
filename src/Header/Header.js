@@ -80,7 +80,6 @@ const ProfileWrapper = styled.div`
   flex-direction: column;
   margin-top: 23rem;
 
-
   @media (min-width: 768px) {
     align-items: flex-start;
     justify-content: flex-start;
@@ -173,6 +172,10 @@ const ContactContainer = styled.div`
 
   a:not(:last-child) {
     margin-right: 30px;
+  }
+
+  @media (min-width: 1025px) {
+    margin-bottom: 0;
   }
 `;
 

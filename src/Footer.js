@@ -13,7 +13,7 @@ const FooterSection = styled.section`
   padding: ${({ theme }) => theme['--side-margins-mobile']} 0;
 
   @media (max-width: 767px) {
-    justify-content: center; /* Change to 'center' for horizontal centering */
+    justify-content: center; 
     padding: 0;
   }
 `;
