@@ -6,22 +6,22 @@ import styled from 'styled-components';
 
 library.add(fab);
 
-const HeaderWrapper = styled.header`
+const HeaderWrapper = styled.section`
   width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+ height: 100vh;
+  }
 
   @media (min-width: 1025px) {
     display: grid;
+    align-items: center;
     grid-template-columns: 1fr 1fr;
-    height: auto;
-  }
-
-  @media (max-width: 767px) {
-    height: auto;
+    height: 100vh;
   }
 `;
 
@@ -34,7 +34,7 @@ const HeroImage = styled.div`
     height: 50vh;
     overflow: hidden;
     position: relative;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 55%, 0% 80%);
     background-size: cover;
     background-position: 75%;
     margin-top: 0;
@@ -78,13 +78,14 @@ const ProfileWrapper = styled.div`
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  margin-top: 15rem;
+  margin-top: 23rem;
+
 
   @media (min-width: 768px) {
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: row;
-    margin: var(--side-margins-tablet) 0 0 0;
+    margin: -4rem 0 0 0;
 
     .profile-pic {
       margin-right: 1.875rem;
@@ -99,6 +100,7 @@ const ProfileWrapper = styled.div`
 
   @media (min-width: 1025px) {
     margin-left: var(--side-margins-desktop);
+    margin-top: 14rem;
   }
 `;
 
@@ -110,18 +112,22 @@ const ProfilePic = styled.img`
   border-radius: 50%;
   border: 2px solid whitesmoke;
   margin: auto;
-  margin-top: 55px;
+  margin-top: 11rem;
   margin-bottom: 29px;
 
   @media (min-width: 768px) {
     position: static;
     margin: 0;
     margin-right: 1.875rem;
+
   }
 `;
 
 const ProfileContentWrapper = styled.div`
   margin: var(--side-margins-mobile) 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 
   @media (min-width: 768px) {
     margin: 0;
@@ -158,6 +164,7 @@ const ContactContainer = styled.div`
   align-items: center;
   flex-wrap: wrap;
   text-align: center;
+  margin: 5rem 0 10rem 0;
 
   @media (min-width: 768px) {
     justify-content: center;

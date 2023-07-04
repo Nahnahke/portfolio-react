@@ -1,31 +1,50 @@
 import React from 'react';
-import styled from 'styled-components';
+import { styled } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const FooterSection = styled.section`
   background-color: white;
-  height: 100vh;
+  min-height: 800px;
+  grid-column: 1 / 2;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  margin: var(--side-margins-mobile);
+  padding: ${({ theme }) => theme['--side-margins-mobile']} 0;
+
+  @media (max-width: 767px) {
+    justify-content: center; /* Change to 'center' for horizontal centering */
+    padding: 0;
+  }
 `;
 
 const FooterHeading = styled.h1`
   font-size: 68px;
   font-weight: 900;
   line-height: 78px;
-  color: #EB5577;
+  color: #eb5577;
   margin-bottom: 20px;
   margin-top: 40px;
   text-align: center;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 90px;
+    line-height: normal;
+    margin-bottom: 50px;
+  }
 `;
 
 const ProfileContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 50px;
+  margin-top: 100px;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+  }
 
   @media (min-width: 1025px) {
     align-items: center;
@@ -37,12 +56,22 @@ const ProfileImage = styled.img`
   max-width: 150px;
   max-height: 150px;
   margin-bottom: 20px;
+  margin-left: 30px;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    border-radius: 50%;
+    max-width: 164px;
+    max-height: 164px;
+    margin-right: 29px;
+    margin-left: 0;
+  }
 `;
 
 const ProfileText = styled.div`
   display: flex;
   flex-direction: column;
   margin: auto 0 auto 10px;
+  margin-left: 30px;
 `;
 
 const FooterHeading2 = styled.h2`
@@ -74,7 +103,7 @@ const PhoneNumber = styled.p`
 `;
 
 const Email = styled.p`
-  margin: 0;
+  margin: 30px 0 0 0;
 
   a {
     text-decoration: none;
@@ -88,6 +117,7 @@ const Email = styled.p`
 
 const LinksContainer = styled.div`
 margin-left: 30px;
+margin-top: 50px;
 `
 
 const Icon = styled.a`
