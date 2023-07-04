@@ -35,6 +35,7 @@ gap: 30px;
   display: flex;
   flex-direction: row;
   margin-bottom: 50px;
+  max-width: 800px;
 }
 `
 
@@ -48,7 +49,7 @@ const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 60%;
+  min-width: 48%;
   }
 `
 

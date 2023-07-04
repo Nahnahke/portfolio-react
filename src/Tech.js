@@ -29,6 +29,7 @@ margin: var(--side-margins-mobile);
 
   @media (min-width: 1025px) {
     margin: var(--side-margins-desktop);
+    max-width: 1000px;
   }
 `;
 
