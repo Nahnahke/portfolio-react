@@ -75,66 +75,44 @@ const ProfileContainer = styled.div`
 
 const ProfileWrapper = styled.div`
   display: flex;
-  align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  margin-top: 18rem;
+  margin-top: 2rem;
+  align-items: center;
+  text-align: center;
 
   @media (min-width: 768px) {
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
     flex-direction: row;
     margin: -4rem 0 0 0;
-
-    .profile-pic {
-      margin-right: 1.875rem;
-    }
-  }
-
-  @media (max-width: 767px) {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
   }
 
   @media (min-width: 1025px) {
     margin-left: var(--side-margins-desktop);
-    margin-top: 14rem;
   }
 `;
 
 const ProfilePic = styled.img`
-  position: absolute;
-  top: 2rem;
   width: 150px;
   height: 150px;
   border-radius: 50%;
   border: 2px solid whitesmoke;
-  margin: auto;
-  margin-top: 5rem;
   margin-bottom: 29px;
 
   @media (min-width: 768px) {
-    position: static;
-    margin: 0;
-    margin-right: 1.875rem;
-
+    margin: 0 1.875rem 0 0;
   }
 `;
 
 const ProfileContentWrapper = styled.div`
-  margin: var(--side-margins-mobile) 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 
   @media (min-width: 768px) {
-    margin: 0;
-    margin-top: 2rem;
-  }
-
-  @media (min-width: 1024px) {
-    margin-right: var(--side-margins-desktop);
+    margin-left: 0;
+    margin-bottom: 2.5rem;
   }
 `;
 
@@ -144,13 +122,15 @@ font-weight: 700;
 line-height: 38px;
 color: #137B8A;
 font-family:  'SatoshiVariable';
+margin-bottom: -20px;
 `;
 
 const Title = styled.h2`
-font-size: 32px;
+font-size: 22px;
 font-weight: 900;
 line-height: 43px;
-margin-right: 24px;
+margin-bottom: -30px;
+
 `;
 
 const Introduction = styled.div`
@@ -162,7 +142,7 @@ const Introduction = styled.div`
 `;
 
 const IntroText = styled.p`
-margin: 0;
+margin-top: 50px;
 font-family: 'EB Garamond', serif;
 font-size: 22px;
 font-weight: 400;
