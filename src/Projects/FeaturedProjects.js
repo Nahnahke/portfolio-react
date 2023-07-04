@@ -49,7 +49,6 @@ const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 48%;
   }
 `
 
