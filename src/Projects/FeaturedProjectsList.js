@@ -1,22 +1,111 @@
 /* eslint-disable react/no-array-index-key */
-import React from 'react';
-import styled from 'styled-components';
-import { Projects } from './Projects'
+import React, { useState } from 'react';
+import styled, { keyframes } from 'styled-components';
+import { Projects } from './Projects';
 import FeaturedProjects from './FeaturedProjects.js';
 
 const StyledHeader = styled.h1`
-font-size: 72px;
-line-height: 80px;
-margin: 64px 0 64px 0;
-text-align: center;
-color:#137B8A;
-`
+  font-size: 72px;
+  line-height: 80px;
+  margin: 64px 0 64px 0;
+  text-align: center;
+  color: #137B8A;
+`;
+
+const blink1 = keyframes`
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+`;
+
+const PaginationContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 4rem 0;
+
+  .cdp {
+    position: relative;
+    text-align: center;
+    font-size: 0;
+
+    &_i {
+      font-family: 'SatoshiVariable';
+      font-size: 22px;
+      text-decoration: none;
+      transition: background 250ms;
+      display: inline-block;
+      text-transform: uppercase;
+      margin: 0 3px 6px;
+      height: 70px;
+      width: 40px;
+      border-radius: 50%;
+      border: 3px solid #EB5577;
+      line-height: 70px;
+      padding: 0;
+      background-color: #E1E9EA;
+      color: #EB5577;
+      font-weight: 800;
+      letter-spacing: .03em;
+      display: none;
+
+      &:first-child,
+      &:last-child {
+        padding: 0 16px;
+        margin: 0 12px 6px;
+      }
+
+      &:last-child,
+      &:nth-child(2),
+      &:nth-last-child(2) {
+        display: inline-block;
+      }
+
+      &.blink-1 {
+        animation: ${blink1} 0.6s both;
+      }
+    }
+
+    &_i:hover {
+      background-color: #EB5577;
+      color: #fff;
+    }
+
+    &:not([data-actpage="1"]) &_i:nth-child(1) {
+      display: inline-block;
+    }
+  }
+`;
 
 const FeaturedProjectsList = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const [animateButton, setAnimateButton] = useState(null);
+  const projectsPerPage = 5;
+
+  const indexOfLastProject = currentPage * projectsPerPage;
+  const indexOfFirstProject = indexOfLastProject - projectsPerPage;
+  const currentProjects = Projects.slice(indexOfFirstProject, indexOfLastProject);
+
+  const handlePageChange = (pageNumber) => {
+    setAnimateButton(pageNumber);
+    setTimeout(() => {
+      setCurrentPage(pageNumber);
+      setAnimateButton(null);
+    }, 600);
+  };
+
+  const totalPages = Math.ceil(Projects.length / projectsPerPage);
+
   return (
     <section lang="en-US" title="List of Hannah's featured projects">
       <StyledHeader>Featured Projects</StyledHeader>
-      {Projects.map((project, index) => (
+      {currentProjects.map((project, index) => (
         <FeaturedProjects
           key={index}
           imgSrc={project.imgSrc}
@@ -26,8 +115,21 @@ const FeaturedProjectsList = () => {
           githubLink={project.githubLink}
           netlifyLink={project.netlifyLink} />
       ))}
+      <PaginationContainer>
+        <div className="cdp" data-actpage={`${currentPage}`}>
+          {Array.from({ length: totalPages }, (_, index) => index + 1).map((pageNumber) => (
+            <a
+              key={pageNumber}
+              href={`#!${pageNumber}`}
+              className={`cdp_i ${animateButton === pageNumber ? 'blink-1' : ''}`}
+              onClick={() => handlePageChange(pageNumber)}>
+              {pageNumber}
+            </a>
+          ))}
+        </div>
+      </PaginationContainer>
     </section>
-  )
+  );
 };
 
 export default FeaturedProjectsList;

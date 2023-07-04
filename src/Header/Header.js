@@ -102,9 +102,6 @@ const ProfilePic = styled.img`
     margin: 0 1.875rem 0 0;
   }
 
-  @media (min-width: 1025px) {
-
-  }
 `;
 
 const Introduction = styled.div`
