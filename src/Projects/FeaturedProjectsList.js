@@ -12,15 +12,34 @@ const StyledHeader = styled.h1`
   color: #137B8A;
 `;
 
-const blink1 = keyframes`
+const flicker1 = keyframes`
   0%,
-  50%,
   100% {
     opacity: 1;
   }
-  25%,
-  75% {
+  41.99% {
+    opacity: 1;
+  }
+  42% {
     opacity: 0;
+  }
+  43% {
+    opacity: 0;
+  }
+  43.01% {
+    opacity: 1;
+  }
+  47.99% {
+    opacity: 1;
+  }
+  48% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  49.01% {
+    opacity: 1;
   }
 `;
 
@@ -43,11 +62,11 @@ const PaginationContainer = styled.div`
       display: inline-block;
       text-transform: uppercase;
       margin: 0 3px 6px;
-      height: 70px;
-      width: 40px;
+      height: 60px;
+      width: 30px;
       border-radius: 50%;
       border: 3px solid #EB5577;
-      line-height: 70px;
+      line-height: 60px;
       padding: 0;
       background-color: #E1E9EA;
       color: #EB5577;
@@ -67,8 +86,12 @@ const PaginationContainer = styled.div`
         display: inline-block;
       }
 
-      &.blink-1 {
-        animation: ${blink1} 0.6s both;
+      &.flicker-1 {
+        animation: ${flicker1} 2s linear infinite both;
+      }
+
+      &.active {
+        animation: ${flicker1} 2s linear infinite both;
       }
     }
 
@@ -85,7 +108,7 @@ const PaginationContainer = styled.div`
 
 const FeaturedProjectsList = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [animateButton, setAnimateButton] = useState(null);
+  const [clickedButton, setClickedButton] = useState(null);
   const projectsPerPage = 5;
 
   const indexOfLastProject = currentPage * projectsPerPage;
@@ -93,11 +116,11 @@ const FeaturedProjectsList = () => {
   const currentProjects = Projects.slice(indexOfFirstProject, indexOfLastProject);
 
   const handlePageChange = (pageNumber) => {
-    setAnimateButton(pageNumber);
+    setCurrentPage(pageNumber);
+    setClickedButton(pageNumber);
     setTimeout(() => {
-      setCurrentPage(pageNumber);
-      setAnimateButton(null);
-    }, 600);
+      setClickedButton(null);
+    }, 2000);
   };
 
   const totalPages = Math.ceil(Projects.length / projectsPerPage);
@@ -121,7 +144,7 @@ const FeaturedProjectsList = () => {
             <a
               key={pageNumber}
               href={`#!${pageNumber}`}
-              className={`cdp_i ${animateButton === pageNumber ? 'blink-1' : ''}`}
+              className={`cdp_i ${clickedButton === pageNumber ? 'active' : ''}`}
               onClick={() => handlePageChange(pageNumber)}>
               {pageNumber}
             </a>
