@@ -34,7 +34,7 @@ gap: 30px;
 @media (min-width: 1025px) {
   display: flex;
   flex-direction: row;
-  max-width: 60%
+  margin-bottom: 50px;
 }
 `
 
@@ -47,6 +47,8 @@ const TextContainer = styled.div`
 @media (min-width: 1025px) {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  min-width: 60%;
   }
 `
 
@@ -65,12 +67,10 @@ object-position: 50%;
 }
 
 @media (min-width: 1024px) {
-  max-height: 600px;
   width: 450px;
   height: 450px;
   object-fit: cover;
   object-position: 50%;
-  margin-bottom: 70px;
 }
 `;
 

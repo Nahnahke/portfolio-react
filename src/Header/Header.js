@@ -69,7 +69,7 @@ const ProfileContainer = styled.div`
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     align-items: flex-start;
-    margin-top: 15rem;
+    margin-top: 13rem;
   }
 `;
 
@@ -82,8 +82,6 @@ const ProfileWrapper = styled.div`
   text-align: center;
 
   @media (min-width: 768px) {
-    align-items: center;
-    justify-content: flex-start;
     flex-direction: row;
     margin: -4rem 0 0 0;
   }
