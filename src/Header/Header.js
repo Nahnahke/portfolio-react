@@ -69,7 +69,7 @@ const ProfileContainer = styled.div`
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     align-items: flex-start;
-    justify-content: flex-start;
+    margin-top: 15rem;
   }
 `;
 
@@ -142,7 +142,6 @@ const Introduction = styled.div`
 `;
 
 const IntroText = styled.p`
-margin-top: 30px;
 font-family: 'EB Garamond', serif;
 font-size: 22px;
 font-weight: 400;
