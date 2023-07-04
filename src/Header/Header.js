@@ -17,7 +17,7 @@ const HeaderWrapper = styled.header`
   @media (min-width: 1025px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 100vh;
+    height: auto;
   }
 
   @media (max-width: 767px) {

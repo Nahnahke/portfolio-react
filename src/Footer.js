@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const FooterSection = styled.section`
   background-color: white;
-  min-height: 800px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,6 +26,10 @@ const ProfileContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 50px;
+
+  @media (min-width: 1025px) {
+    align-items: center;
+  }
 `;
 
 const ProfileImage = styled.img`
@@ -56,6 +60,36 @@ const FooterHeading4 = styled.h4`
   margin: 0;
 `;
 
+const PhoneNumber = styled.p`
+  margin: 0;
+
+  a {
+    text-decoration: none;
+    color: #333;
+
+    &:hover {
+      color: #999;
+    }
+  }
+`;
+
+const Email = styled.p`
+  margin: 0;
+
+  a {
+    text-decoration: none;
+    color: #333;
+
+    &:hover {
+      color: #999;
+    }
+  }
+`;
+
+const LinksContainer = styled.div`
+margin-left: 30px;
+`
+
 const Icon = styled.a`
   font-size: 35px;
   color: #333;
@@ -83,10 +117,14 @@ const Footer = () => {
         </ProfileText>
       </ProfileContainer>
 
-      <p><a href="tel:+46(0)706 711 804">+46 (0)706 711 804</a></p>
-      <p><a href="mailto:ekhannahek@gmail.com">ekhannahek@gmail.com</a></p>
+      <PhoneNumber>
+        <a href="tel:+46(0)706 711 804">+46 (0)706 711 804</a>
+      </PhoneNumber>
+      <Email>
+        <a href="mailto:ekhannahek@gmail.com">ekhannahek@gmail.com</a>
+      </Email>
 
-      <div className="links">
+      <LinksContainer>
         <Icon
           hrefLang="en-US"
           title="link to Hannah Ek's LinkedIn page"
@@ -111,7 +149,7 @@ const Footer = () => {
           rel="noreferrer">
           <FontAwesomeIcon icon={['fab', 'stack-overflow']} />
         </Icon>
-      </div>
+      </LinksContainer>
     </FooterSection>
   );
 };
