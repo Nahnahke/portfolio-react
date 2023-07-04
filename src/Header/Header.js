@@ -78,7 +78,7 @@ const ProfileWrapper = styled.div`
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  margin-top: 23rem;
+  margin-top: 18rem;
 
   @media (min-width: 768px) {
     align-items: flex-start;
@@ -111,7 +111,7 @@ const ProfilePic = styled.img`
   border-radius: 50%;
   border: 2px solid whitesmoke;
   margin: auto;
-  margin-top: 11rem;
+  margin-top: 5rem;
   margin-bottom: 29px;
 
   @media (min-width: 768px) {
