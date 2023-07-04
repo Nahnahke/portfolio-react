@@ -78,6 +78,7 @@ const StyledProjectTitle = styled.h1`
   font-size: 32px;
   line-height: 43px;
   margin: 10px 0 10px 0;
+  font-family:  'SatoshiVariable';
 `;
 
 const StyledProjectDescription = styled.p`
@@ -85,10 +86,16 @@ const StyledProjectDescription = styled.p`
   line-height: 29px;
   margin-top: 18px;
   margin-bottom: 20px;
+  font-family: 'EB Garamond', serif;
+  font-size: 22px;
+  font-weight: 400;
 `;
 
 const StyledCodeTemplates = styled.div`
   margin: 10px 0 5px 0;
+  font-family: 'EB Garamond', serif;
+  font-size: 22px;
+  font-weight: 400;
 `;
 
 const StyledLanguages = styled.p`

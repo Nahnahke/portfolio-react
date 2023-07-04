@@ -20,6 +20,10 @@ const Title = styled.h3`
 
 const TechText = styled.p`
   margin: var(--side-margins-mobile);
+  margin: 0;
+  font-family: 'EB Garamond', serif;
+  font-size: 22px;
+  font-weight: 400;
 
   @media (min-width: 768px) {
     margin: 0 120px;

@@ -139,12 +139,18 @@ const ProfileContentWrapper = styled.div`
 `;
 
 const Name = styled.h1`
-  color: #137b8a;
-  margin-bottom: 0.5rem;
+font-size: 28px;
+font-weight: 700;
+line-height: 38px;
+color: #137B8A;
+font-family:  'SatoshiVariable';
 `;
 
 const Title = styled.h2`
-  margin-top: 0;
+font-size: 32px;
+font-weight: 900;
+line-height: 43px;
+margin-right: 24px;
 `;
 
 const Introduction = styled.div`
@@ -155,7 +161,12 @@ const Introduction = styled.div`
   }
 `;
 
-const IntroText = styled.p``;
+const IntroText = styled.p`
+margin: 0;
+font-family: 'EB Garamond', serif;
+font-size: 22px;
+font-weight: 400;
+`;
 
 const ContactContainer = styled.div`
   display: flex;

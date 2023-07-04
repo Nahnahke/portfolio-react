@@ -25,7 +25,6 @@ const StyledHeader = styled.header`
   color: #137B8A;
   text-align: center;
   margin: 60px auto 25px auto;
-  font-family: 'SatoshiVariable';
   font-size: 80px;
   font-weight: 700;
   line-height: 108px;
@@ -98,9 +97,9 @@ const StyledUpcomingDt = styled.dt`
 `
 
 const StyledDd = styled.dd`
-  margin: 0;
-  font-size: 22px;
-  font-family: 'EB Garamond', serif;
+margin: 0;
+font-size: 22px;
+font-family: 'EB Garamond', serif;
 `
 
 const Skills = () => {

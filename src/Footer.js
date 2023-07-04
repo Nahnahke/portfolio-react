@@ -90,11 +90,14 @@ const FooterHeading4 = styled.h4`
 `;
 
 const PhoneNumber = styled.p`
-  margin: 0;
+margin: 0;
+font-family: 'EB Garamond', serif;
+font-size: 22px;
+font-weight: 400;
 
   a {
     text-decoration: none;
-    color: #333;
+    color: black;
 
     &:hover {
       color: #999;
@@ -103,11 +106,14 @@ const PhoneNumber = styled.p`
 `;
 
 const Email = styled.p`
-  margin: 30px 0 0 0;
+margin: 0;
+font-family: 'EB Garamond', serif;
+font-size: 22px;
+font-weight: 400;
 
   a {
     text-decoration: none;
-    color: #333;
+    color: black;
 
     &:hover {
       color: #999;
@@ -143,7 +149,7 @@ const Footer = () => {
         <ProfileText>
           <FooterHeading2>Hannah Ek</FooterHeading2>
           <FooterHeading3>Frontend developer</FooterHeading3>
-          <FooterHeading4>with a background in sales and production</FooterHeading4>
+          <FooterHeading4>with a background in sales and e-commerce</FooterHeading4>
         </ProfileText>
       </ProfileContainer>
 
