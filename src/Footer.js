@@ -6,6 +6,7 @@ import Profile from 'Profile';
 const FooterSection = styled.section`
   background-color: white;
   min-height: 800px;
+  height: 100vh;
   grid-column: 1 / 2;
   display: flex;
   flex-direction: column;
@@ -114,10 +115,6 @@ font-weight: 400;
 const LinksContainer = styled.div`
 margin-left: 30px;
 margin-top: 50px;
-
-@media (min-width: 1025px) {
-margin-bottom: 40px;
-}
 `
 
 const Icon = styled.a`

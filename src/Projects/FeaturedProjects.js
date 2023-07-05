@@ -67,8 +67,8 @@ object-position: 50%;
 }
 
 @media (min-width: 1024px) {
-  width: 450px;
-  height: 450px;
+  width: 400px;
+  height: 400px;
   object-fit: cover;
   object-position: 50%;
 }
