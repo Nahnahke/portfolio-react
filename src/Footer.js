@@ -24,20 +24,26 @@ const FooterSection = styled.section`
   }
 `;
 
+const HeaderContainer = styled.div`
+margin-bottom: 20px;
+margin-top: 40px;
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  margin-bottom: 50px;
+}
+`
+
 const FooterHeading = styled.h1`
   font-size: 68px;
   font-weight: 900;
   line-height: 78px;
   color: #eb5577;
-  margin-bottom: 20px;
-  margin-top: 40px;
   text-align: center;
   margin: ${({ theme }) => theme['--side-margins-mobile']};
 
   @media (min-width: 768px) and (max-width: 1024px) {
     font-size: 90px;
     line-height: normal;
-    margin-bottom: 50px;
   }
 
 `;
@@ -127,7 +133,9 @@ const Icon = styled.a`
 const Footer = () => {
   return (
     <FooterSection>
-      <FooterHeading>Time to talk</FooterHeading>
+      <HeaderContainer>
+        <FooterHeading>Time to talk</FooterHeading>
+      </HeaderContainer>
       <ProfileContainer>
         <ProfileImage
           title="image"
