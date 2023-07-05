@@ -11,26 +11,26 @@ const ProfileText = styled.div`
 const FooterHeading2 = styled.h2`
 font-family:  'SatoshiVariable';
 margin: 0 0 0 20px;
+font-size: 28px;
+font-weight: 700;
+line-height: 38px;
 color: #137B8A;
-font-size: 26px;
-font-weight: 300;
-line-height: 30px;
 `;
 
 const FooterHeading3 = styled.h3`
 font-family:  'SatoshiVariable';
 margin: 0 0 0 20px;
-font-size: 20px;
-font-weight: 300;
-line-height: 30px;
+font-size: 32px;
+font-weight: 900;
+line-height: 43px;
 `;
 
 const FooterHeading4 = styled.h4`
 font-family:  'SatoshiVariable';
 margin: 0 0 0 20px;
-font-size: 20px;
-font-weight: 300;
-line-height: 30px;
+font-size: 24px;
+font-weight: 500;
+line-height: 32px;
 `;
 
 const Profile = () => {

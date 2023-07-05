@@ -40,9 +40,6 @@ const FooterHeading = styled.h1`
     margin-bottom: 50px;
   }
 
-  @media (min-width: 1025px) {
-    margin-top: 160px;
-  }
 `;
 
 const ProfileContainer = styled.div`
