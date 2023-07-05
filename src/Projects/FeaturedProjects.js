@@ -34,6 +34,7 @@ gap: 30px;
 @media (min-width: 1025px) {
   display: flex;
   flex-direction: row;
+  align-items: center;
   margin-bottom: 50px;
   max-width: 800px;
 }
@@ -87,7 +88,6 @@ const StyledProjectDescription = styled.p`
   margin-top: 18px;
   margin-bottom: 20px;
   font-family: 'EB Garamond', serif;
-  font-size: 22px;
   font-weight: 400;
 `;
 

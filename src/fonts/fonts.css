@@ -1,22 +1,13 @@
 @font-face {
     font-family: 'SatoshiVariable';
-    src: url('./Satoshi_Complete/Fonts/Variable/Satoshi-Variable.ttf') format('truetype');
-    /* Add additional src lines for other font file formats, if available */
-    font-weight: normal;
-    font-style: normal;
+    src: url('./Satoshi_Complete/Fonts/Variable/Satoshi-Variable.ttf') format('truetype'); 
   }
   
   @font-face {
     font-family: 'EBGaramond';
     src: url('./EB_Garamond/EBGaramond-Italic-VariableFont_wght.ttf') format('truetype');
-    /* Add additional src lines for other font file formats, if available */
-    font-weight: normal;
-    font-style: normal;
   }
   
-  /* Define additional font faces for different font styles (e.g., bold, italic) */
-  
-  /* Define global font styles */
   body {
     font-family: 'CustomFont', sans-serif;
   }
