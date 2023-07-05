@@ -62,11 +62,11 @@ const PaginationContainer = styled.div`
       display: inline-block;
       text-transform: uppercase;
       margin: 0 3px 6px;
-      height: 60px;
-      width: 30px;
+      height: 50px;
+      width: 20px;
       border-radius: 50%;
       border: 3px solid #EB5577;
-      line-height: 60px;
+      line-height: 50px;
       padding: 0;
       background-color: #E1E9EA;
       color: #EB5577;

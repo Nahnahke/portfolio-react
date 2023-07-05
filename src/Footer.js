@@ -17,6 +17,10 @@ const FooterSection = styled.section`
     justify-content: center; 
     padding: 0;
   }
+
+  @media (min-width: 1025px) {
+    height: 100vh;
+  }
 `;
 
 const FooterHeading = styled.h1`
@@ -34,6 +38,10 @@ const FooterHeading = styled.h1`
     line-height: normal;
     margin-bottom: 50px;
   }
+
+  @media (min-width: 1025px) {
+    margin-top: 140px;
+  }
 `;
 
 const ProfileContainer = styled.div`
@@ -50,6 +58,7 @@ const ProfileContainer = styled.div`
 
   @media (min-width: 1025px) {
     align-items: center;
+    margin-top: 180px;
   }
 `;
 
