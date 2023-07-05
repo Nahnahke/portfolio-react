@@ -58,7 +58,6 @@ const ProfileContainer = styled.div`
 
   @media (min-width: 1025px) {
     align-items: center;
-    margin-top: 70px;
   }
 `;
 
