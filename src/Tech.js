@@ -56,9 +56,10 @@ const Tech = () => {
     <TechWrapper lang="en-US" title="information about Hannah's tech-stack" aria-label="Information about tech-stack">
       <Title>Tech</Title>
       <TechText>
-        HTML, CSS, Flexbox, <PinkMark>Javascript</PinkMark>, ES6, JSX, <RedMark>React</RedMark>
-        , React Hooks, Redux, <BlueMark>Redux Toolkit</BlueMark>
-        , Node.js, MongoDB, Express.js, Web Accessibility, Restful APIs, pair-programming, Github.
+        HTML, CSS, Flexbox, <PinkMark>Javascript ES6</PinkMark>, JSX, <RedMark>React</RedMark>,
+        Responsive Design, React Hooks, Redux, <BlueMark>Redux Toolkit</BlueMark>
+        , Node.js, MongoDB, Express.js, Web Accessibility, Restful API:s,
+        mob- and pair-programming, Github.
       </TechText>
     </TechWrapper>
   );

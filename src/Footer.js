@@ -62,6 +62,7 @@ const ProfileContainer = styled.div`
 
   @media (min-width: 1025px) {
     align-items: center;
+    margin-top: 12rem;
   }
 `;
 
@@ -150,7 +151,6 @@ const Footer = () => {
       <Email>
         <a href="mailto:ekhannahek@gmail.com">ekhannahek@gmail.com</a>
       </Email>
-
       <LinksContainer>
         <Icon
           hrefLang="en-US"

@@ -6,7 +6,6 @@ const StyledProjectWrapper = styled.div`
   margin: var(--side-margins-mobile);
 
   @media (min-width: 667px) and (max-width: 1024px) {
-  margin: auto;
   margin: var(--side-margins-tablet);
   display: flex;
   align-items: center;
@@ -36,7 +35,7 @@ gap: 30px;
   flex-direction: row;
   align-items: center;
   margin-bottom: 50px;
-  max-width: 800px;
+  max-width: 820px;
 }
 `
 
@@ -47,8 +46,6 @@ const TextContainer = styled.div`
   }
 
 @media (min-width: 1025px) {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   }
 `
@@ -147,7 +144,7 @@ const ButtonWrapper = styled.div`
 display: flex;
 flex-direction: column;
 
-@media (min-width: 667px) and (max-width: 1024px) {
+@media (min-width: 667px) {
 flex-direction: row;
 gap: 15px;
 }

@@ -4,7 +4,6 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import styled from 'styled-components';
 import Profile from 'Profile';
-import LetsScroll from 'LetsScroll';
 
 library.add(fab);
 
@@ -150,13 +149,6 @@ const Icon = styled.a`
   }
 `;
 
-const LetsScrollWrapper = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-top: 5rem;
-`;
-
 const Header = () => {
   return (
     <HeaderWrapper>
@@ -208,9 +200,6 @@ const Header = () => {
             </Icon>
           </ContactContainer>
         </Introduction>
-        <LetsScrollWrapper>
-          <LetsScroll />
-        </LetsScrollWrapper>
       </ProfileContainer>
     </HeaderWrapper>
   );
