@@ -26,13 +26,11 @@ gap: 30px;
 
 @media (min-width: 667px) and (max-width: 1024px) {
   display: flex;
-  flex-direction: row;
   align-items: center;
   }
 
 @media (min-width: 1025px) {
   display: flex;
-  flex-direction: row;
   align-items: center;
   margin-bottom: 50px;
   max-width: 820px;
@@ -57,18 +55,13 @@ object-fit: cover;
 object-position: 50%;
 
 @media (min-width: 667px) and (max-width: 1024px) {
-  max-height: 600px;
   width: 350px;
   height: 350px;
-  object-fit: cover;
-  object-position: 50%;
 }
 
 @media (min-width: 1024px) {
-  width: 350px;
-  height: 350px;
-  object-fit: cover;
-  object-position: 50%;
+  max-height: 350px;
+  width: 100%;
 }
 `;
 

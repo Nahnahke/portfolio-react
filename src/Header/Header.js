@@ -127,7 +127,6 @@ const ContactContainer = styled.div`
   margin: 5rem 0 10rem 0;
 
   @media (min-width: 768px) {
-    justify-content: center;
     margin-left: 0;
   }
 

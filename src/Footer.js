@@ -55,9 +55,7 @@ const ProfileContainer = styled.div`
   margin-top: 100px;
 
   @media (min-width: 768px) and (max-width: 1024px) {
-    display: flex;
     flex-direction: row;
-    margin-bottom: 50px;
   }
 
   @media (min-width: 1025px) {
@@ -73,7 +71,6 @@ const ProfileImage = styled.img`
   margin-left: 30px;
 
   @media (min-width: 768px) and (max-width: 1024px) {
-    border-radius: 50%;
     max-width: 164px;
     max-height: 164px;
     margin-right: 29px;

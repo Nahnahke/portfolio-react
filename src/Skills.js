@@ -12,11 +12,6 @@ const SkillsContainer = styled.section`
   padding-top: 60px;
 
   @media (min-width: 667px) and (max-width: 1024px) {
-    grid-column: 1/2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     min-height: 800px;
   }
 `
