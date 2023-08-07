@@ -27,7 +27,7 @@ const ScrollToTopContainer = styled.div`
 const IconPosition = styled.div`
   position: fixed;
   bottom: 50px;
-  left: 45px;
+  right: 45px;
   z-index: 20;
 `;
 
