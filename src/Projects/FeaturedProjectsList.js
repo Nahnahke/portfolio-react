@@ -65,11 +65,10 @@ const PaginationContainer = styled.div`
       height: 50px;
       width: 20px;
       border-radius: 50%;
-      border: 3px solid #EB5577;
       line-height: 50px;
       padding: 0;
-      background-color: #E1E9EA;
-      color: #EB5577;
+      background-color: #F5F5F5;
+      color: black;
       font-weight: 800;
       letter-spacing: .03em;
       display: none;
