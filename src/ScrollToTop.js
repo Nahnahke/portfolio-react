@@ -35,8 +35,8 @@ const IconStyle = styled(FaAngleUp)`
   background-color: #eb5577;
   border: 2px solid #fff;
   border-radius: 50%;
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   color: #fff;
   cursor: pointer;
   animation: ${MoveBtnAnimation} 3s ease-in-out infinite;
