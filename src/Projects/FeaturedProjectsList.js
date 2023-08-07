@@ -109,7 +109,7 @@ const PaginationContainer = styled.div`
 const FeaturedProjectsList = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [clickedButton, setClickedButton] = useState(null);
-  const projectsPerPage = 5;
+  const projectsPerPage = 7;
 
   const indexOfLastProject = currentPage * projectsPerPage;
   const indexOfFirstProject = indexOfLastProject - projectsPerPage;
@@ -128,6 +128,19 @@ const FeaturedProjectsList = () => {
   return (
     <section lang="en-US" title="List of Hannah's featured projects">
       <StyledHeader>Featured Projects</StyledHeader>
+      <PaginationContainer>
+        <div className="cdp" data-actpage={`${currentPage}`}>
+          {Array.from({ length: totalPages }, (_, index) => index + 1).map((pageNumber) => (
+            <a
+              key={pageNumber}
+              href={`#!${pageNumber}`}
+              className={`cdp_i ${clickedButton === pageNumber ? 'active' : ''}`}
+              onClick={() => handlePageChange(pageNumber)}>
+              {pageNumber}
+            </a>
+          ))}
+        </div>
+      </PaginationContainer>
       {currentProjects.map((project, index) => (
         <FeaturedProjects
           key={index}
