@@ -128,7 +128,7 @@ font-weight: 400;
 
 const LinksContainer = styled.div`
 margin-left: 30px;
-margin-top: 120px;
+margin-top: 80px;
 margin-bottom: 30px;
 
 @media (min-width: 768px) {
