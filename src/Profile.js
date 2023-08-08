@@ -31,6 +31,11 @@ margin: 0 0 0 20px;
 font-size: 24px;
 font-weight: 500;
 line-height: 32px;
+margin-bottom: 25px;
+
+@media (min-width: 1025px) {
+  margin-bottom: 45px;
+}
 `;
 
 const Profile = () => {

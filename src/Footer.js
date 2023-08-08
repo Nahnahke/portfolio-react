@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { styled } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -48,7 +49,7 @@ const FooterHeading = styled.h1`
 
 `;
 
-const ProfileContainer = styled.div`
+const ProfileWrapper = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 50px;
@@ -57,9 +58,11 @@ const ProfileContainer = styled.div`
   @media (min-width: 768px) and (max-width: 1024px) {
     flex-direction: row;
   }
+  
 
   @media (min-width: 1025px) {
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
     margin-top: 50px;
   }
 `;
@@ -135,14 +138,14 @@ const Footer = () => {
       <HeaderContainer>
         <FooterHeading>Time to talk</FooterHeading>
       </HeaderContainer>
-      <ProfileContainer>
+      <ProfileWrapper>
         <ProfileImage
           title="image"
           src="/images/profile-picture.jpg"
           alt="Photo of Hannah"
           className="personal-photo" />
         <Profile />
-      </ProfileContainer>
+      </ProfileWrapper>
       <PhoneNumber>
         <a href="tel:+46(0)706 711 804">+46 (0)706 711 804</a>
       </PhoneNumber>
