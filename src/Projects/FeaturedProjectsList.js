@@ -56,7 +56,6 @@ const PaginationContainer = styled.div`
 
     &_i {
       font-family: 'SatoshiVariable';
-      font-size: 22px;
       text-decoration: none;
       transition: background 250ms;
       display: inline-block;
@@ -66,9 +65,12 @@ const PaginationContainer = styled.div`
       width: 20px;
       border-radius: 50%;
       line-height: 50px;
+      font-weight: 500;
+      font-size: 18px;
       padding: 0;
+      border: 2px solid #137B8A;
       background-color: #F5F5F5;
-      color: black;
+      color: #137B8A;
       font-weight: 800;
       letter-spacing: .03em;
       display: none;
@@ -97,6 +99,7 @@ const PaginationContainer = styled.div`
     &_i:hover {
       background-color: #EB5577;
       color: #fff;
+      border: 2px solid #F5F5F5;
     }
 
     &:not([data-actpage="1"]) &_i:nth-child(1) {
