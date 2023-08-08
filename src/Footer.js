@@ -18,10 +18,6 @@ const FooterSection = styled.section`
     justify-content: center; 
     padding: 0;
   }
-
-  @media (min-width: 1025px) {
-    height: 100vh;
-  }
 `;
 
 const HeaderContainer = styled.div`
@@ -62,7 +58,8 @@ const ProfileContainer = styled.div`
   @media (min-width: 1025px) {
     flex-direction: row;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 65px;
+    margin-bottom: 60px;
   }
 `;
 
@@ -131,7 +128,7 @@ font-weight: 400;
 
 const LinksContainer = styled.div`
 margin-left: 30px;
-margin-top: 50px;
+margin-top: 60px;
 margin-bottom: 30px;
 
 @media (min-width: 768px) {
