@@ -48,7 +48,7 @@ const FooterHeading = styled.h1`
 
 `;
 
-const ProfileWrapper = styled.div`
+const ProfileContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 50px;
@@ -65,6 +65,20 @@ const ProfileWrapper = styled.div`
     margin-top: 50px;
   }
 `;
+
+const ProfileWrapper = styled.div`
+@media (min-width: 768px) and (max-width: 1024px) {
+  display: flex;
+justify-content: center;
+margin-bottom: 20px;
+}
+
+@media (min-width: 1025px) {
+  display: flex;
+justify-content: center;
+margin-bottom: 45px;
+}
+`
 
 const ProfileImage = styled.img`
   border-radius: 50%;
@@ -141,14 +155,16 @@ const Footer = () => {
       <HeaderContainer>
         <FooterHeading>Time to talk</FooterHeading>
       </HeaderContainer>
-      <ProfileWrapper>
+      <ProfileContainer>
         <ProfileImage
           title="image"
           src="/images/profile-picture.jpg"
           alt="Photo of Hannah"
           className="personal-photo" />
-        <Profile />
-      </ProfileWrapper>
+        <ProfileWrapper>
+          <Profile />
+        </ProfileWrapper>
+      </ProfileContainer>
       <PhoneNumber>
         <a href="tel:+46(0)706 711 804">+46 (0)706 711 804</a>
       </PhoneNumber>
