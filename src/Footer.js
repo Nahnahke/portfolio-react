@@ -58,7 +58,7 @@ const ProfileContainer = styled.div`
   @media (min-width: 1025px) {
     flex-direction: row;
     justify-content: center;
-    margin-top: 65px;
+    margin-top: 60px;
     margin-bottom: 60px;
   }
 `;
@@ -128,7 +128,7 @@ font-weight: 400;
 
 const LinksContainer = styled.div`
 margin-left: 30px;
-margin-top: 60px;
+margin-top: 120px;
 margin-bottom: 30px;
 
 @media (min-width: 768px) {
