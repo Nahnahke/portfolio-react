@@ -116,6 +116,7 @@ font-weight: 400;
 const LinksContainer = styled.div`
 margin-left: 30px;
 margin-top: 50px;
+margin-bottom: 30px;
 `
 
 const Icon = styled.a`
