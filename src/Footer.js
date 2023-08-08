@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React from 'react';
 import { styled } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -120,6 +119,10 @@ const LinksContainer = styled.div`
 margin-left: 30px;
 margin-top: 50px;
 margin-bottom: 30px;
+
+@media (min-width: 768px) {
+margin-bottom: 0;
+}
 `
 
 const Icon = styled.a`
