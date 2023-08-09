@@ -12,7 +12,7 @@ const FooterSection = styled.section`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: ${({ theme }) => theme['--side-margins-mobile']} 0;
+  padding: var(--side-margins-mobilr);
 `;
 
 const HeaderContainer = styled.div`
@@ -30,7 +30,7 @@ const FooterHeading = styled.h1`
   line-height: 78px;
   color: #eb5577;
   text-align: center;
-  margin: ${({ theme }) => theme['--side-margins-mobile']};
+  margin: var(--side-margins-mobile);
 
   @media (min-width: 768px) and (max-width: 1024px) {
     font-size: 90px;
