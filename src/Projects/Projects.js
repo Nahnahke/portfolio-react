@@ -1,7 +1,7 @@
 export const Projects = [
   {
     imgSrc: '/images/final-project.png',
-    title: 'Homeigo Realtor Homepage',
+    title: 'Homeigo Homepage',
     description: 'This was a group project where we built a realtor homepage. We built our own database, backend and frontend using React, Redux, Node.js and MongoDB. We incorporated a map function and a powerful search function as the main components of the page.',
     languages: ['HTML5', 'CSS3', 'Javascript', 'React', 'Redux', 'Styled components', 'Mob-programming', 'Node.js', 'Express.js', 'MongoDB'],
     githubLink: 'https://github.com/Nahnahke/final-project-frontend',
