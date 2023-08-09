@@ -94,21 +94,5 @@ export const Projects = [
     languages: ['HTML5', 'CSS3', 'Javascript'],
     githubLink: 'https://github.com/Nahnahke/project-guess-who',
     netlifyLink: 'https://glittery-sunshine-6998ce.netlify.app/'
-  },
-  {
-    imgSrc: '/images/project-chatbot.png',
-    title: 'Chatbot built in Javascript',
-    description: 'My first JavaScript project and a small little chatbot serving as a fictional bookshop keeper. I worked on using variables and conditionals in Javascript, some string methods to modify string and understand the control flow and use of conditional statements. I learnt how to use functions in JavaScript and I learnt about different datatypes.',
-    languages: ['HTML5', 'CSS3', 'Javascript'],
-    githubLink: 'https://github.com/Nahnahke/project-chatbot',
-    netlifyLink: 'https://tubular-kataifi-ad7e5a.netlify.app/'
-  },
-  {
-    imgSrc: '/images/project-newssite.png',
-    title: 'Newssite built in HTML & CSS',
-    description: 'This was a project where I worked on learning how to structure webpages using HTML. I worked on styling the page using CSS (Box Model, Grid & Flexbox) and how to make it responsive.',
-    languages: ['HTML5', 'CSS3', 'Responsive Design'],
-    githubLink: 'https://github.com/Nahnahke/project-news-site',
-    netlifyLink: 'https://splendid-paletas-c8ee80.netlify.app/'
   }
 ];
