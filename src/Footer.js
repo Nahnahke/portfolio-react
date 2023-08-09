@@ -13,11 +13,8 @@ const FooterSection = styled.section`
   justify-content: flex-start;
   align-items: center;
   padding: ${({ theme }) => theme['--side-margins-mobile']} 0;
-
-  @media (max-width: 767px) {
     justify-content: center; 
     padding: 0;
-  }
 `;
 
 const HeaderContainer = styled.div`
