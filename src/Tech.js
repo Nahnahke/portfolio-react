@@ -51,14 +51,21 @@ const BlueMark = styled.mark`
   color: #FFFFFF;
 `;
 
+const GreenMark = styled.mark`
+  background-color: green;
+  padding: 3px;
+  color: #FFFFFF;
+`;
+
 const Tech = () => {
   return (
     <TechWrapper lang="en-US" title="information about Hannah's tech-stack" aria-label="Information about tech-stack">
       <Title>Tech</Title>
       <TechText>
         HTML, CSS, Flexbox, <PinkMark>Javascript ES6</PinkMark>, JSX, <RedMark>React</RedMark>,
-        Responsive Design, React Hooks, Redux, <BlueMark>Redux Toolkit</BlueMark>
-        , Node.js, MongoDB, Express.js, Web Accessibility, Restful API:s,
+        Responsive Design, React Hooks, Redux, Redux Toolkit
+        , <BlueMark>Node.js</BlueMark>, MongoDB, Express.js, Web Accessibility,
+        <GreenMark>Restful API:s</GreenMark>,
         mob- and pair-programming, Github.
       </TechText>
     </TechWrapper>
