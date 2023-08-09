@@ -124,7 +124,7 @@ const ContactContainer = styled.div`
   align-items: center;
   flex-wrap: wrap;
   text-align: center;
-  margin: 5rem 0 4rem 0;
+  margin: 5rem 0 3rem 0;
 
   @media (min-width: 768px) {
     margin-left: 0;
