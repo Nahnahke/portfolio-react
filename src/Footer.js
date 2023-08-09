@@ -13,8 +13,6 @@ const FooterSection = styled.section`
   justify-content: flex-start;
   align-items: center;
   padding: ${({ theme }) => theme['--side-margins-mobile']} 0;
-    justify-content: center; 
-    padding: 0;
 `;
 
 const HeaderContainer = styled.div`
@@ -55,7 +53,7 @@ const ProfileContainer = styled.div`
   @media (min-width: 1025px) {
     flex-direction: row;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 80px;
     margin-bottom: 60px;
   }
 `;
@@ -129,7 +127,7 @@ margin-top: 80px;
 margin-bottom: 30px;
 
 @media (min-width: 768px) {
-margin-bottom: 0;
+margin-bottom: 40px;
 }
 `
 
@@ -153,7 +151,7 @@ const Footer = () => {
         <ProfileImage
           title="image"
           src="/images/profile-picture.jpg"
-          alt="Photo of Hannah"
+          alt="Profile picture of Hannah Ek"
           className="personal-photo" />
         <ProfileWrapper>
           <Profile />
