@@ -1,7 +1,7 @@
 import React from 'react';
 import { styled } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Profile from 'Profile';
+import Profile from 'components/lib/Profile';
 
 const FooterSection = styled.section`
   background-color: white;

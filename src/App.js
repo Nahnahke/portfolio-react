@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from 'Header/Header';
-import Tech from 'Tech';
-import FeaturedProjectsList from 'Projects/FeaturedProjectsList';
-import Skills from 'Skills';
-import Footer from 'Footer';
-import ScrollToTop from 'ScrollToTop';
+import Header from 'components/Header/Header';
+import Tech from 'components/Tech';
+import FeaturedProjectsList from 'components/Projects/FeaturedProjectsList';
+import Skills from 'components/Skills';
+import Footer from 'components/Footer';
+import ScrollToTop from 'components/lib/ScrollToTop';
 
 export const App = () => {
   return (

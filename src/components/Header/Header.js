@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import styled from 'styled-components';
-import Profile from 'Profile';
+import Profile from 'components/lib/Profile';
 
 library.add(fab);
 
