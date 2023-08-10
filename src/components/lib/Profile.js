@@ -37,7 +37,7 @@ const Profile = () => {
   return (
     <ProfileText>
       <FooterHeading2>Hannah Ek</FooterHeading2>
-      <FooterHeading3>Frontend developer with a backend passion</FooterHeading3>
+      <FooterHeading3>Frontend developer</FooterHeading3>
       <FooterHeading4>with a background in sales and e-commerce</FooterHeading4>
     </ProfileText>
   )
