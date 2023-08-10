@@ -38,7 +38,7 @@ const Profile = () => {
     <ProfileText>
       <FooterHeading2>Hannah Ek</FooterHeading2>
       <FooterHeading3>Frontend developer</FooterHeading3>
-      <FooterHeading4>with a background in sales and e-commerce</FooterHeading4>
+      <FooterHeading4>with a backend passion</FooterHeading4>
     </ProfileText>
   )
 };
