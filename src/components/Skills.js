@@ -48,7 +48,7 @@ const SkillListContainer = styled.div`
     gap: 4rem;
     margin: var(--side-margins-desktop);
   }
-`
+`;
 
 const StyledCodeDt = styled.dt`
   display: inline-block;
@@ -101,7 +101,7 @@ const Skills = () => {
     <SkillsContainer>
       <StyledHeader>Skills</StyledHeader>
       <SkillListContainer>
-        <dl className="Code">
+        <dl className="Code slide-in-left">
           <StyledCodeDt>Code</StyledCodeDt>
           <StyledDd lang="en">HTML</StyledDd>
           <StyledDd lang="en">CSS</StyledDd>

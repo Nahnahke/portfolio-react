@@ -62,7 +62,7 @@ const GreenMark = styled.mark`
 
 const line1 = 'HTML, CSS, Flexbox, ';
 const highlightedTextPink = <PinkMark>Javascript ES6</PinkMark>;
-const highlightedTextJSX = 'JSX';
+const highlightedTextJSX = ', JSX, ';
 const highlightedTextRed = <RedMark>React</RedMark>;
 const remainingLine1 = ', Responsive Design, React Hooks,';
 const line2 = ', Redux, Redux Toolkit, MongoDB, Express.js, Web Accessibility,';
@@ -100,7 +100,7 @@ const Tech = () => {
       transition: {
         delay: 0.5,
         staggerChildren: 0.08,
-        duration: 3.5
+        duration: 1
       }
     }
   };
