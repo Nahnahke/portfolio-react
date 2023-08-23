@@ -1,5 +1,5 @@
-/* eslint-disable prefer-template */
 /* eslint-disable react/no-array-index-key */
+/* eslint-disable prefer-template */
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
@@ -60,6 +60,16 @@ const GreenMark = styled.mark`
   color: #FFFFFF;
 `;
 
+const line1 = 'HTML, CSS, Flexbox, ';
+const highlightedTextPink = <PinkMark>Javascript ES6</PinkMark>;
+const highlightedTextJSX = 'JSX';
+const highlightedTextRed = <RedMark>React</RedMark>;
+const remainingLine1 = ', Responsive Design, React Hooks,';
+const line2 = ', Redux, Redux Toolkit, MongoDB, Express.js, Web Accessibility,';
+const highlightedTextBlue = <BlueMark>Node.js</BlueMark>;
+const line3 = ', mob- and pair-programming, Github.';
+const highlightedTextGreen = <GreenMark>Restful API:s</GreenMark>;
+
 const Tech = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -67,7 +77,7 @@ const Tech = () => {
     const options = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.5
+      threshold: 0.4
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -83,23 +93,14 @@ const Tech = () => {
     };
   }, []);
 
-  const line1 = 'HTML, CSS, Flexbox, ';
-  const highlightedTextPink = <PinkMark>Javascript ES6</PinkMark>;
-  const highlightedTextJSX = ', JSX, ';
-  const highlightedTextRed = <RedMark>React</RedMark>;
-  const remainingLine1 = ', Responsive Design, React Hooks,';
-  const line2 = ', Redux, Redux Toolkit, MongoDB, Express.js, Web Accessibility,';
-  const highlightedTextBlue = <BlueMark>Node.js</BlueMark>;
-  const line3 = ', mob- and pair-programming, Github.';
-  const highlightedTextGreen = <GreenMark>Restful API:s</GreenMark>;
-
   const sentence = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
         delay: 0.5,
-        staggerChildren: 0.08
+        staggerChildren: 0.08,
+        duration: 3.5
       }
     }
   };
@@ -131,11 +132,9 @@ const Tech = () => {
             </motion.span>
           ))}
           {highlightedTextPink}
-          {highlightedTextJSX.split('').map((char, index) => (
-            <motion.span key={'jsx-' + char + '-' + index} variants={letter}>
-              {char}
-            </motion.span>
-          ))}
+          <motion.span key="jsx" variants={letter}>
+            {highlightedTextJSX}
+          </motion.span>
           {highlightedTextRed}
           {remainingLine1.split('').map((char, index) => (
             <motion.span key={'remaining-' + char + '-' + index} variants={letter}>
