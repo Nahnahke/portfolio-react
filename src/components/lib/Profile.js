@@ -5,7 +5,7 @@ const ProfileText = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: auto 0 auto;
+  margin: var(--side-margins-mobile);
 `;
 
 const FooterHeading2 = styled.h2`
