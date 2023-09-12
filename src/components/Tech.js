@@ -11,6 +11,7 @@ const TechWrapper = styled.section`
   align-items: center;
   justify-content: center;
   background-color: #EDFFFF;
+  z-index: 1;
 `;
 
 const Title = styled.h3`
