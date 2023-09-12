@@ -25,6 +25,9 @@ const TechText = styled.p`
   font-family: 'EB Garamond', serif;
   font-size: 22px;
   font-weight: 400;
+  white-space: nowrap;
+
+
 
   @media (min-width: 768px) {
     margin: var(--side-margins-tablet);
