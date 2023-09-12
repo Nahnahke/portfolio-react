@@ -66,7 +66,6 @@ const ProfileContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 
   @media (min-width: 1025px) {
     grid-column: 1 / 2;
