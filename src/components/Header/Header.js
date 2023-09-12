@@ -8,15 +8,11 @@ import Profile from 'components/lib/Profile';
 library.add(fab);
 
 const HeaderWrapper = styled.section`
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-
-  @media (min-width: 768px) and (max-width: 1024px) {
-    height: 100%;
-  }
 
   @media (min-width: 1025px) {
     display: grid;
