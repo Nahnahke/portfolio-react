@@ -32,14 +32,6 @@ export const Projects = [
     netlifyLink: 'https://project-labyrinth-jhs.netlify.app/'
   },
   {
-    imgSrc: '/images/project-todo.png',
-    title: 'To do app in React',
-    description: 'This project is a simple todo-app built in React using Redux. The user can add, delete and check their todos, featured along with the day of the week and the current date.',
-    languages: ['HTML5', 'CSS3', 'Javascript', 'React', 'Redux'],
-    githubLink: 'https://github.com/Nahnahke/project-todos',
-    netlifyLink: 'https://hannah-project-to-do.netlify.app/'
-  },
-  {
     imgSrc: '/images/project-quiz.jpg',
     title: 'React quiz',
     description: 'This was a group project where we built a multiple answer quiz in React Redux. We used selectors to access the Redux state and we dispatched to trigger Redux actions.',
