@@ -123,6 +123,7 @@ const Skills = () => {
           <StyledDd lang="en">Concept Developement</StyledDd>
           <StyledDd lang="en">Mob-programming</StyledDd>
           <StyledDd lang="en">Pair-programming</StyledDd>
+          <StyledDd lang="en">Git</StyledDd>
         </dl>
         <dl className="Upcoming">
           <StyledUpcomingDt>Upcoming</StyledUpcomingDt>
