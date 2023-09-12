@@ -88,11 +88,11 @@ const ProfileImage = styled.img`
 `;
 
 const PhoneNumber = styled.p`
+font-family:  'SatoshiVariable';
 margin: 0;
-font-family: 'EB Garamond', serif;
-font-size: 22px;
-font-weight: 400;
-margin-bottom: 10px;
+font-size: 24px;
+font-weight: 900;
+line-height: 43px;
 
   a {
     text-decoration: none;
@@ -105,10 +105,11 @@ margin-bottom: 10px;
 `;
 
 const Email = styled.p`
+font-family:  'SatoshiVariable';
 margin: 0;
-font-family: 'EB Garamond', serif;
-font-size: 22px;
-font-weight: 400;
+font-size: 24px;
+font-weight: 900;
+line-height: 43px;
 
   a {
     text-decoration: none;

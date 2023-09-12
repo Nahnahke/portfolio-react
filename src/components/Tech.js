@@ -27,8 +27,6 @@ const TechText = styled.p`
   font-weight: 400;
   white-space: nowrap;
 
-
-
   @media (min-width: 768px) {
     margin: var(--side-margins-tablet);
   }
