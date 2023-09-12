@@ -15,7 +15,7 @@ const HeaderWrapper = styled.section`
   justify-content: flex-start;
 
   @media (min-width: 768px) and (max-width: 1024px) {
-    height: auto;
+    height: 150vh;
   }
 
   @media (min-width: 1025px) {
