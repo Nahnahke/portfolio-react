@@ -14,9 +14,11 @@ const HeaderWrapper = styled.section`
   align-items: flex-start;
   justify-content: flex-start;
 
+  /*
   @media (min-width: 768px) and (max-width: 1024px) {
     height: 150vh;
   }
+  */
 
   @media (min-width: 1025px) {
     display: grid;
@@ -54,12 +56,12 @@ const HeroImage = styled.div`
   }
 `;
 
-/*const CoverImage = styled.img`
+const CoverImage = styled.img`
   height: 100%;
   width: 100%;
   object-fit: cover;
   overflow: hidden;
-`;*/
+`;
 
 const ProfileContainer = styled.div`
   display: flex;
