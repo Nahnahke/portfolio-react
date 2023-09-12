@@ -73,7 +73,7 @@ const ProfileContainer = styled.div`
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     align-items: flex-start;
-
+    margin-top: 20%;
   }
 `;
 
@@ -164,16 +164,12 @@ const Header = () => {
         </ProfileWrapper>
         <Introduction lang="en-US">
           <IntroText>
-            Meet Hannah - a skilled web developer with a diverse
-            professional background. With experience in sales,
-            e-commerce and production in Asia, and now in the
-            field of frontend development, Hannah brings a unique
-            perspective and skill set to her work. A quick learner,
-            Hannah is passionate about creating engaging and
-            dynamic web experiences that leave a lasting impression
-             on users. With a sharp eye for detail and a dedication
-            to quality, Hannah is a valuable asset to any team she
-            works with.
+          Hello! I`&apos`m Hannah Ek, a dynamic frontend developer with a
+           unique twist. With years of experience in the world of
+           sales and close customer interactions, I bring a fresh
+           perspective to web development. My journey from the business
+           side has instilled in me a passion for creating engaging and
+            user-centric web experiences.
           </IntroText>
           <ContactContainer>
             <Icon
