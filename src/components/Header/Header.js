@@ -73,7 +73,7 @@ const ProfileContainer = styled.div`
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     align-items: flex-start;
-
+    margin-top: 20%;
   }
 `;
 
