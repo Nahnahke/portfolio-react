@@ -144,7 +144,7 @@ const Footer = () => {
   return (
     <FooterSection>
       <HeaderContainer>
-        <FooterHeading>Time to talk</FooterHeading>
+        <FooterHeading>Let&apos;s Connect</FooterHeading>
       </HeaderContainer>
       <ProfileContainer>
         <ProfileImage
