@@ -1,5 +1,4 @@
 /* eslint-disable react/no-array-index-key */
-/* eslint-disable prefer-template */
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
@@ -18,6 +17,7 @@ const Title = styled.h3`
   line-height: 108px;
   font-weight: 700;
   color: #EB5577;
+  margin: 0;
 `;
 
 const TechText = styled.p`
@@ -70,6 +70,24 @@ const highlightedTextBlue = <BlueMark>Node.js</BlueMark>;
 const line3 = ', mob- and pair-programming, Github.';
 const highlightedTextGreen = <GreenMark>Restful API:s</GreenMark>;
 
+const TechContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 1025px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+`;
+
+const TitleContainer = styled.div`
+  @media (min-width: 1025px) {
+    flex-basis: 30%;
+  }
+`;
+
 const Tech = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -119,44 +137,48 @@ const Tech = () => {
       title="information about Hannah's tech-stack"
       aria-label="Information about tech-stack"
       id="tech-section">
-      <Title>Tech</Title>
-      <TechText>
-        <motion.span
-          className="load-screen--message"
-          variants={sentence}
-          initial={isVisible ? 'visible' : 'hidden'}
-          animate={isVisible ? 'visible' : 'hidden'}>
-          {line1.split('').map((char, index) => (
-            <motion.span key={char + '-' + index} variants={letter}>
-              {char}
+      <TechContainer>
+        <TitleContainer>
+          <Title>Tech</Title>
+        </TitleContainer>
+        <TechText>
+          <motion.span
+            className="load-screen--message"
+            variants={sentence}
+            initial={isVisible ? 'visible' : 'hidden'}
+            animate={isVisible ? 'visible' : 'hidden'}>
+            {line1.split('').map((char, index) => (
+              <motion.span key={`${char}-${index}`} variants={letter}>
+                {char}
+              </motion.span>
+            ))}
+            {highlightedTextPink}
+            <motion.span key="jsx" variants={letter}>
+              {highlightedTextJSX}
             </motion.span>
-          ))}
-          {highlightedTextPink}
-          <motion.span key="jsx" variants={letter}>
-            {highlightedTextJSX}
+            {highlightedTextRed}
+            {remainingLine1.split('').map((char, index) => (
+              <motion.span key={`remaining-${char}-${index}`} variants={letter}>
+                {char}
+              </motion.span>
+            ))}
+            <br />
+            {highlightedTextBlue}
+            {line2.split('').map((char, index) => (
+              <motion.span key={`${char}-${index}`} variants={letter}>
+                {char}
+              </motion.span>
+            ))}
+            <br />
+            {highlightedTextGreen}
+            {line3.split('').map((char, index) => (
+              <motion.span key={`${char}-${index}`} variants={letter}>
+                {char}
+              </motion.span>
+            ))}
           </motion.span>
-          {highlightedTextRed}
-          {remainingLine1.split('').map((char, index) => (
-            <motion.span key={'remaining-' + char + '-' + index} variants={letter}>
-              {char}
-            </motion.span>
-          ))}
-          <br />
-          {highlightedTextBlue}
-          {line2.split('').map((char, index) => (
-            <motion.span key={char + '-' + index} variants={letter}>
-              {char}
-            </motion.span>
-          ))}
-          <br />
-          {highlightedTextGreen}
-          {line3.split('').map((char, index) => (
-            <motion.span key={char + '-' + index} variants={letter}>
-              {char}
-            </motion.span>
-          ))}
-        </motion.span>
-      </TechText>
+        </TechText>
+      </TechContainer>
     </TechWrapper>
   );
 };
