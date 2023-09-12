@@ -54,12 +54,12 @@ const HeroImage = styled.div`
   }
 `;
 
-const CoverImage = styled.img`
+/*const CoverImage = styled.img`
   height: 100%;
   width: 100%;
   object-fit: cover;
   overflow: hidden;
-`;
+`;*/
 
 const ProfileContainer = styled.div`
   display: flex;
