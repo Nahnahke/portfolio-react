@@ -14,6 +14,10 @@ const HeaderWrapper = styled.section`
   align-items: flex-start;
   justify-content: flex-start;
 
+  @media (min-width: 768px) and (max-width: 1024px) {
+    height: auto;
+  }
+
   @media (min-width: 1025px) {
     display: grid;
     align-items: center;
@@ -54,6 +58,7 @@ const CoverImage = styled.img`
   height: 100%;
   width: 100%;
   object-fit: cover;
+  overflow: hidden;
 `;
 
 const ProfileContainer = styled.div`
@@ -61,6 +66,7 @@ const ProfileContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 
   @media (min-width: 1025px) {
     grid-column: 1 / 2;
