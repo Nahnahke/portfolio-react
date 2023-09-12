@@ -164,7 +164,7 @@ const Header = () => {
         </ProfileWrapper>
         <Introduction lang="en-US">
           <IntroText>
-          Hello! I`&apos`m Hannah Ek, a dynamic frontend developer with a
+          Hello! I'm Hannah Ek, a dynamic frontend developer with a
            unique twist. With years of experience in the world of
            sales and close customer interactions, I bring a fresh
            perspective to web development. My journey from the business
