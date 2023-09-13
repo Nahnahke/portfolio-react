@@ -13,7 +13,7 @@ export const Projects = [
     description: 'A pair programming project where we built an authenticator using tokens and storing the user password safely in the database considering security and defensive design.',
     languages: ['HTML5', 'CSS3', 'Javascript', 'React', 'Redux', 'Node.js', 'Express.js', 'Styled components', 'Mob-programming'],
     githubLink: 'https://github.com/Nahnahke/project-auth',
-    netlifyLink: 'https://superb-alfajores-2745c6.netlify.app/login'
+    netlifyLink: 'https://stellar-chebakia-44f98b.netlify.app/login'
   },
   {
     imgSrc: '/images/project-happy-thoughts.jpg',
