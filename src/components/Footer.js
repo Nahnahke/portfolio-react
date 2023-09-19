@@ -152,7 +152,7 @@ width: 40%;
 `;
 
 const StyledSVG = styled.svg`
-
+display: none;
 
 @media (min-width: 768px) {
   width: 90px;
