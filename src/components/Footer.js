@@ -22,7 +22,7 @@ margin-top: 40px;
 @media (min-width: 768px) and (max-width: 1024px) {
   margin-bottom: 50px;
 }
-`
+`;
 
 const FooterHeading = styled.h1`
   font-size: 68px;
@@ -42,7 +42,7 @@ const FooterHeading = styled.h1`
 const ProfileContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 
   @media (min-width: 768px) and (max-width: 1024px) {
     flex-direction: row;
@@ -53,7 +53,7 @@ const ProfileContainer = styled.div`
     flex-direction: row;
     justify-content: center;
     margin-top: 80px;
-    margin-bottom: 60px;
+    margin-bottom: 0;
   }
 `;
 
@@ -75,7 +75,7 @@ const ProfileImage = styled.img`
   border-radius: 50%;
   max-width: 150px;
   max-height: 150px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   margin-left: 30px;
 
   @media (min-width: 768px) and (max-width: 1024px) {
@@ -90,7 +90,7 @@ const ProfileImage = styled.img`
 const PhoneNumber = styled.p`
 font-family:  'SatoshiVariable';
 margin: 0;
-font-size: 24px;
+font-size: 18px;
 font-weight: 900;
 line-height: 43px;
 
@@ -102,12 +102,16 @@ line-height: 43px;
       color: #999;
     }
   }
+
+  @media (min-width: 1025px) {
+    font-size: 24px;
+  }
 `;
 
 const Email = styled.p`
 font-family:  'SatoshiVariable';
 margin: 0;
-font-size: 24px;
+font-size: 18px;
 font-weight: 900;
 line-height: 43px;
 
@@ -118,6 +122,10 @@ line-height: 43px;
     &:hover {
       color: #999;
     }
+  }
+
+  @media (min-width: 1025px) {
+    font-size: 24px;
   }
 `;
 
