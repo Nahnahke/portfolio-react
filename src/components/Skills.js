@@ -112,6 +112,7 @@ const Skills = () => {
           <StyledDd lang="en">Github</StyledDd>
           <StyledDd lang="en">Figma</StyledDd>
           <StyledDd lang="en">Slack</StyledDd>
+          <StyledDd lang="en">Google Cloud</StyledDd>
         </dl>
         <dl className="More">
           <StyledMoreDt>More</StyledMoreDt>

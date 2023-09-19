@@ -130,21 +130,18 @@ line-height: 43px;
 `;
 
 const shakeVerticalAnimation = keyframes`
-  0%, 100% {
-    transform: translateY(0);
-  }
-  10%, 30%, 50%, 70% {
-    transform: translateY(-8px);
-  }
-  20%, 40%, 60% {
-    transform: translateY(8px);
-  }
-  80% {
-    transform: translateY(6.4px);
-  }
-  90% {
-    transform: translateY(-6.4px);
-  }
+0% {
+  transform: translateX(0) translateY(0) rotate(0);
+}
+10% {
+  transform: translateX(10%) translateY(-10%) rotate(10deg);
+}
+50% {
+  transform: translateX(50%) translateY(-50%) rotate(720deg); /* Larger loop (adjust the degrees as needed) */
+}
+100% {
+  transform: translateX(110%) translateY(-10%) rotate(1440deg); /* Larger loop (adjust the degrees as needed) */
+}
 `;
 
 const SvgContainer = styled.div`
@@ -152,15 +149,15 @@ width: 40%;
 `;
 
 const StyledSVG = styled.svg`
-display: none;
-
-@media (min-width: 768px) {
   width: 90px;
   height: 90px;
   margin-left: 80%;
-}
 
-  animation: ${shakeVerticalAnimation} 5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both infinite;
+  animation: ${shakeVerticalAnimation} 15s infinite;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
 `;
 
 const LinksContainer = styled.div`
