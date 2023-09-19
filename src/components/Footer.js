@@ -152,9 +152,13 @@ width: 40%;
 `;
 
 const StyledSVG = styled.svg`
+
+
+@media (min-width: 768px) {
   width: 90px;
   height: 90px;
   margin-left: 80%;
+}
 
   animation: ${shakeVerticalAnimation} 5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both infinite;
 `;
