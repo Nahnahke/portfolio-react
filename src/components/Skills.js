@@ -10,11 +10,7 @@ const SkillsContainer = styled.section`
   align-items: center;
   min-height: 100vh;
   padding-top: 60px;
-
-  @media (min-width: 667px) and (max-width: 1024px) {
-    min-height: 800px;
-  }
-`
+`;
 
 const StyledHeader = styled.header`
   color: #137B8A;
