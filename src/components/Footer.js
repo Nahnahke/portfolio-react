@@ -1,5 +1,5 @@
 import React from 'react';
-import { styled, keyframes } from 'styled-components';
+import { styled } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Profile from 'components/lib/Profile';
 
@@ -129,21 +129,6 @@ line-height: 43px;
   }
 `;
 
-const shakeVerticalAnimation = keyframes`
-0% {
-  transform: translateX(0) translateY(0) rotate(0);
-}
-10% {
-  transform: translateX(10%) translateY(-10%) rotate(10deg);
-}
-50% {
-  transform: translateX(50%) translateY(-50%) rotate(720deg); /* Larger loop (adjust the degrees as needed) */
-}
-100% {
-  transform: translateX(110%) translateY(-10%) rotate(1440deg); /* Larger loop (adjust the degrees as needed) */
-}
-`;
-
 const SvgContainer = styled.div`
 width: 40%;
 `;
@@ -152,8 +137,6 @@ const StyledSVG = styled.svg`
   width: 90px;
   height: 90px;
   margin-left: 80%;
-
-  animation: ${shakeVerticalAnimation} 15s infinite;
 
   @media (max-width: 767px) {
     display: none;
