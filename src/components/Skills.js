@@ -99,28 +99,38 @@ const Skills = () => {
       <SkillListContainer>
         <dl className="Code slide-in-left">
           <StyledCodeDt>Code</StyledCodeDt>
-          <StyledDd lang="en">HTML</StyledDd>
-          <StyledDd lang="en">CSS</StyledDd>
-          <StyledDd lang="en">Javascript</StyledDd>
+          <StyledDd lang="en">HTML5</StyledDd>
+          <StyledDd lang="en">CSS3</StyledDd>
+          <StyledDd lang="en">Javascript ES6</StyledDd>
+          <StyledDd lang="en">Styled Components</StyledDd>
           <StyledDd lang="en">React</StyledDd>
-          <StyledDd lang="en">JSX</StyledDd>
           <StyledDd lang="en">Redux</StyledDd>
           <StyledDd lang="en">Node.js</StyledDd>
+          <StyledDd lang="en">MongoDB</StyledDd>
+          <StyledDd lang="en">Express.js</StyledDd>
         </dl>
         <dl className="Toolbox">
           <StyledToolboxDt>Toolbox</StyledToolboxDt>
           <StyledDd lang="en">Github</StyledDd>
+          <StyledDd lang="en">VS Code</StyledDd>
+          <StyledDd lang="en">Stack Overflow</StyledDd>
           <StyledDd lang="en">Figma</StyledDd>
-          <StyledDd lang="en">Slack</StyledDd>
-          <StyledDd lang="en">Google Cloud</StyledDd>
+          <StyledDd lang="en">ChatGPT</StyledDd>
+          <StyledDd lang="en">Postman</StyledDd>
+          <StyledDd lang="en">Compass</StyledDd>
+          <StyledDd lang="en">Atlas</StyledDd>
+          <StyledDd lang="en">Google Cloud Platform</StyledDd>
         </dl>
         <dl className="More">
           <StyledMoreDt>More</StyledMoreDt>
           <StyledDd lang="en">Agile methodology</StyledDd>
+          <StyledDd lang="en">Project Management</StyledDd>
           <StyledDd lang="en">Concept Developement</StyledDd>
+          <StyledDd lang="en">Database Management</StyledDd>
           <StyledDd lang="en">Mob-programming</StyledDd>
           <StyledDd lang="en">Pair-programming</StyledDd>
           <StyledDd lang="en">Git</StyledDd>
+          <StyledDd lang="en">Sales</StyledDd>
         </dl>
         <dl className="Upcoming">
           <StyledUpcomingDt>Upcoming</StyledUpcomingDt>
