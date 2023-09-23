@@ -123,7 +123,7 @@ const Skills = () => {
         </dl>
         <dl className="More">
           <StyledMoreDt>More</StyledMoreDt>
-          <StyledDd lang="en">Agile methodology</StyledDd>
+          <StyledDd lang="en">Agile Methodology</StyledDd>
           <StyledDd lang="en">Project Management</StyledDd>
           <StyledDd lang="en">Concept Developement</StyledDd>
           <StyledDd lang="en">Database Management</StyledDd>
