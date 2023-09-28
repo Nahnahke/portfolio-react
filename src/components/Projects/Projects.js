@@ -1,6 +1,7 @@
 export const Projects = [
   {
     imgSrc: '/images/final-project.png',
+    id: '468928ba-5e18-11ee-8c99-0242ac120002',
     title: 'Homeigo Homepage',
     description: 'This was a group project where we built a realtor homepage. We built our own database, backend and frontend using React, Redux, Node.js and MongoDB. We incorporated a map function and a powerful search function as the main components of the page.',
     languages: ['HTML5', 'CSS3', 'Javascript', 'React', 'Redux', 'Styled components', 'Mob-programming', 'Node.js', 'Express.js', 'MongoDB'],
@@ -9,6 +10,7 @@ export const Projects = [
   },
   {
     imgSrc: '/images/project-authenticator.png',
+    id: '4f33f7c4-5e18-11ee-8c99-0242ac120002',
     title: 'Authenticator',
     description: 'A pair programming project where we built an authenticator using tokens and storing the user password safely in the database considering security and defensive design.',
     languages: ['HTML5', 'CSS3', 'Javascript', 'React', 'Redux', 'Node.js', 'Express.js', 'Styled components', 'Mob-programming'],
@@ -17,6 +19,7 @@ export const Projects = [
   },
   {
     imgSrc: '/images/project-happy-thoughts.jpg',
+    id: '56623376-5e18-11ee-8c99-0242ac120002',
     title: 'Happy Thoughts',
     description: 'A backend and frontend project where I built an API where you can both fetch and post data to and from the database, sending "happy thoughts" to the feed. Think of it as a version of Twitter, but with less negativity, and 100% fewer Elon Musks using it.',
     languages: ['HTML5', 'CSS3', 'Javascript', 'React', 'Node.js', 'Express.js'],
@@ -25,6 +28,7 @@ export const Projects = [
   },
   {
     imgSrc: '/images/project-labyrinth.png',
+    id: '5cd0054e-5e18-11ee-8c99-0242ac120002',
     title: 'The Labyrinth',
     description: 'A text based adventure game that allows the user to navigate through a maze provided by a backend in React & Redux. We focused on using thunks and Redux to build the communcation with the backend.',
     languages: ['HTML5', 'CSS3', 'Javascript', 'React', 'Redux', 'Styled components', 'Mob-programming', 'Restful-API'],
@@ -33,6 +37,7 @@ export const Projects = [
   },
   {
     imgSrc: '/images/project-quiz.jpg',
+    id: '631e6c6a-5e18-11ee-8c99-0242ac120002',
     title: 'React quiz',
     description: 'This was a group project where we built a multiple answer quiz in React Redux. We used selectors to access the Redux state and we dispatched to trigger Redux actions.',
     languages: ['HTML5', 'CSS3', 'Javascript', 'React', 'Redux', 'Styled components', 'Mob-programming'],
@@ -41,6 +46,7 @@ export const Projects = [
   },
   {
     imgSrc: '/images/project-design.png',
+    id: '6b0a9228-5e18-11ee-8c99-0242ac120002',
     title: 'UX Collaboration design hand-off',
     description: 'A project where I worked hand in hand with UX designer Hanna Jonsson and experienced a design hand-off. The project was a yoga app landing page where I took to heart what role color, typography and overall hierarchy play in web design.',
     languages: ['HTML5', 'CSS3', 'Javascript', 'React'],
@@ -49,6 +55,7 @@ export const Projects = [
   },
   {
     imgSrc: '/images/project-movies.jpg',
+    id: '71c33c28-5e18-11ee-8c99-0242ac120002',
     title: 'Movie Releases in React',
     description: 'This was a project where we focused on making React apps with multiple pages using routes. We passed information such as product ID:s and titles in the URL and picked it up in the React router in order to load dynamic content. We worked with fetching from APIs and the combination of useState & useEffect.',
     languages: ['HTML5', 'CSS3', 'Javascript', 'Responsive Design', 'Mob-programming'],
@@ -57,6 +64,7 @@ export const Projects = [
   },
   {
     imgSrc: '/images/project-survey.jpg',
+    id: '787ecd02-5e18-11ee-8c99-0242ac120002',
     title: 'E-commerce survey',
     description: 'With the survey app I worked with form in React using the useState hook. My idea was a follow up e-mail to a customer after they have received their order with a link to this page. I worked on my skills, building a site containing components, the useState hook, form fields and how to connect HTML form inputs to state.',
     languages: ['HTML5', 'CSS3', 'Javascript', 'React', 'Responsive Design'],
@@ -65,6 +73,7 @@ export const Projects = [
   },
   {
     imgSrc: '/images/music-releases.jpg',
+    id: '7ec588ea-5e18-11ee-8c99-0242ac120002',
     title: 'Music Releases in React',
     description: 'In this project I created a site in React displaying music releases using an API from Spotify. I worked on breaking up Javascript code into importable modules, how to write JSX and React components and how to use .map to iterate over arrays and data. I also worked towards honing my skills in React and building a site containing props and components.',
     languages: ['HTML5', 'CSS3', 'Javascript', 'React', 'Pair-programming'],
@@ -73,6 +82,7 @@ export const Projects = [
   },
   {
     imgSrc: '/images/weather-app.jpg',
+    id: '8535c4e2-5e18-11ee-8c99-0242ac120002',
     title: 'Weather app built in Javascript',
     description: 'This project was all about APIs and fetching external data to our website. It was a pair-programming project and we learnt basic JSON, how to use promises & fetch() in Javascript as well as how to work with the Date() object. I very much enjoyed working in a group on this project and I learnt a lot from my fellow coders!',
     languages: ['HTML5', 'CSS3', 'Javascript', 'Mob-programming'],
@@ -81,6 +91,7 @@ export const Projects = [
   },
   {
     imgSrc: '/images/guess-who.jpg',
+    id: '8af51c98-5e18-11ee-8c99-0242ac120002',
     title: 'Guess who game built in Javascript',
     description: 'The guess who game is a small project using arrays & objects in Javascript as well as the use of array methods such as forEach and filter. I worked on structuring my code in my functions and manipulating the DOM using Javascript. A very fun project!',
     languages: ['HTML5', 'CSS3', 'Javascript'],
