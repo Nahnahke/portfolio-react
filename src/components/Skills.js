@@ -134,9 +134,10 @@ const Skills = () => {
         </dl>
         <dl className="Upcoming">
           <StyledUpcomingDt>Upcoming</StyledUpcomingDt>
+          <StyledDd lang="en">Next.js</StyledDd>
           <StyledDd lang="en">React Native</StyledDd>
           <StyledDd lang="en">TypeScript</StyledDd>
-          <StyledDd lang="en">Java</StyledDd>
+          <StyledDd lang="en">Sanity</StyledDd>
         </dl>
       </SkillListContainer>
     </SkillsContainer>
